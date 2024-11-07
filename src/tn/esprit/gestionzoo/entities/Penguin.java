@@ -18,5 +18,14 @@ public class Penguin extends Aquatic {
         this.swimmingDepth = swimmingDepth;
     }
 
-// Redéfinition de toString pour inclure l'attribut spécifique
+    @Override
+    public String toString() {
+        return "Penguin [swimmingDepth=" + swimmingDepth + ", " + super.toString() + "]";
+    }
+
+    @Override
+    public void swim() {
+    
+        throw new UnsupportedOperationException("Unimplemented method 'swim'");
+    }
 }
